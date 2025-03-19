@@ -27,9 +27,9 @@ LAPORAN.md
 - HTML5
 - CSS3 (Flexbox, Grid, Media Queries)
 - JavaScript (toggle dark mode)
-- Google Fonts & Gambar icon PNG
+- Google Fonts & Gambar icon 
 
-## Hosting (contoh link)
+## Hosting 
 [https://tangkasport.com](https://tingkisss.github.io/potofoliotingkizz/)
 
 
