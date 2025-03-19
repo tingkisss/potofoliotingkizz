@@ -30,6 +30,6 @@ LAPORAN.md
 - Google Fonts & Gambar icon PNG
 
 ## Hosting (contoh link)
-[https://your-github-pages-link.com](https://tingkisss.github.io/potofoliotingkizz/)
+[https://tangkasport.com](https://tingkisss.github.io/potofoliotingkizz/)
 
 
