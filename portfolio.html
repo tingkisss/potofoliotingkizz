@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Tangkas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <button id="toggle-dark">Dark Mode</button>
+        </nav>
+    </header>
+    <main>
+        <h1>Proyek Saya</h1>
+        <div class="project-grid">
+            <a href="projects/project1.html" class="project-card">
+                <img src="img/tibbia.png" alt="Proyek 1">
+                <h2>Website Thibbun Nabawi</h2>
+                <p>Peran: Backend Developer, Tim kelompok</p>
+            </a>
+            <a href="projects/project2.html" class="project-card">
+                <img src="img/kuis.jpg" alt="Proyek 2">
+                <h2>Quiz App Java (PBO)</h2>
+                <p>Peran: Backend & Logic, Tim kelompok</p>
+            </a>
+            <a href="projects/project3.html" class="project-card">
+                <img src="img/greenfoot.png" alt="Proyek 3">
+                <h2>OOP Game Project</h2>
+                <p>Peran: Struktur dan logika OOP, Tim kelompok</p>
+            </a>
+        </div>
+        <h1>Pencapaian</h1>
+        <div class="project-grid">
+            <a href="achievements/debat.html" class="project-card">
+                <img src="img/fotoku.jpg" alt="Debat Mahasiswa">
+                <h2>First Winner Interkom Kompetisi Lomba Debat Mahasiswa</h2>
+                <p>Peran: First Speaker, Tingkat kampus</p>
+            </a>
+            <a href="achievements/nudc.html" class="project-card">
+                <img src="img/nudc.jpg" alt="Sertifikat 1">
+                <h2>Finalist Intercom National University Debate Championship</h2>
+                <p>Peran: Second Speaker, Tingkat kampus</p>
+            </a>
+            <a href="achievements/sertif2.html" class="project-card">
+                <img src="img/certificate2.jpg" alt="Sertifikat 2">
+                <h2>?</h2>
+                <p>?</p>
+            </a>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Tangkas. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/tangkas.wn"><img src="img/instagram.jpeg" alt="Instagram"></a>
+            <a href="https://wa.me/085174070806"><img src="img/whatsapp.jpeg" alt="WhatsApp"></a>
+            <a href="#"><img src="img/linkedin.jpeg" alt="LinkedIn"></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('toggle-dark').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>

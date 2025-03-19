@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Personal - Tangkas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Tangkas Portofoilo :)
+            </div>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="portfolio.html">Portofolio</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+            </ul>
+            <button id="toggle-dark">Dark Mode</button>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <img src="img/fotoku.jpg" alt="Foto Profil">
+            <h1>Halo, Saya Tangkas Wahyu Nugroho</h1>
+            <p>Saya seorang mahasiswa Informatika yang tertarik pada Web Development, Database, GameDev.</p>
+            <p>Selalu ingin belajar hal baru, dan aktif dalam kegiatan akademik maupun organisasi.</p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Tangkas. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="https://instagram.com/tangkas.wn"><img src="img/instagram.jpeg" alt="Instagram"></a>
+            <a href="https://wa.me/085174070806"><img src="img/whatsapp.jpeg" alt="WhatsApp"></a>
+            <a href="#"><img src="img/linkedin.jpeg" alt="LinkedIn"></a>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('toggle-dark').addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
+</body>
+</html>
