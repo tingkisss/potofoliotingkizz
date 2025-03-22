@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Personal - Tangkas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -12,7 +12,7 @@
     <header>
         <nav>
             <div class="logo">
-                Tangkas Portfolio
+                byTangkas
             </div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
@@ -32,7 +32,7 @@
                 <h1>Halo, Saya <span class="highlight">Tangkas Wahyu Nugroho</span></h1>
                 <p class="subtitle">Saya seorang mahasiswa Informatika yang tertarik pada Web Development, Database, dan GameDev.</p>
                 <p>Selalu ingin belajar hal baru, dan aktif dalam kegiatan akademik maupun organisasi.</p>
-                <button class="download-cv">Download CV</button>
+                <button class="about-me">About Me</button>
             </div>
             <div class="hero-image">
                 <img src="img/fotoku.jpg" alt="Foto Profil">
@@ -44,26 +44,14 @@
             <h2>Tentang Saya</h2>
             <div class="about-content">
                 <div class="about-image">
-                    <img src="img/fotoku.jpg" alt="Foto Profil">
+                    <img src="img/foto.jpg" alt="Foto Profil">
                 </div>
                 <div class="about-text">
                     <h3>Tangkas Wahyu Nugroho</h3>
                     <p class="about-subtitle">Mahasiswa Informatika</p>
-                    <p>Saya adalah mahasiswa yang bersemangat mempelajari berbagai hal baru dalam bidang teknologi. Fokus utama saya adalah Web Development, Database, dan GameDev. Selain itu, saya juga aktif dalam kegiatan akademik dan organisasi kampus.</p>
-                    <div class="skills">
-                        <div class="skill">
-                            <span>Web Development</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill">
-                            <span>Database</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
-                        </div>
-                        <div class="skill">
-                            <span>Game Development</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
-                        </div>
-                    </div>
+                    <p>Saya adalah mahasiswa yang bersemangat mempelajari berbagai hal baru dalam bidang teknologi. Fokus utama saya adalah Web Development, Database, dan GameDev. Sebagai seorang yang selalu ingin berkembang, saya terus mengeksplorasi teknologi-teknologi terbaru dan best practices dalam pengembangan aplikasi.</p>
+                    <p>Dalam perjalanan akademik saya, saya telah mencoba untuk berkontribusi dalam beberapa proyek sederhana mulai dari mwmbuat website hingga aplikasi berbasis Java. Saya percaya bahwa kombinasi pengetahuan teoritis dan pengalaman praktis merupakan kunci untuk menjadi profesional teknologi yang handal.</p>
+                    <p>Selain kegiatan teknis, saya juga aktif dalam kegiatan debat di lingkungan kampus yang telah mengasah kemampuan komunikasi, berpikir kritis, dan kerjasama tim saya. Pengalaman ini melengkapi keterampilan teknis dengan soft skills yang tidak kalah penting di dunia profesional.</p>
                 </div>
             </div>
         </section>
@@ -72,38 +60,18 @@
     <footer>
         <div class="footer-content">
             <div class="footer-info">
-                <p>© 2025 Tangkas. All rights reserved.</p>
+                <p>© 2025 Tangkas. Hak Cipta Dilindungi.</p>
             </div>
             <div class="social-icons">
                 <a href="https://instagram.com/tangkas.wn"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/085174070806"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tangkas187"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Toggle Dark Mode
-        document.getElementById('toggle-dark').addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const icon = document.querySelector('#toggle-dark i');
-            const text = document.getElementById('toggle-dark');
-            
-            if (document.body.classList.contains('dark-mode')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-                text.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-                text.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
-            }
-        });
-
-        // Mobile Menu Toggle
-        document.querySelector('.menu-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>

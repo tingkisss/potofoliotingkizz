@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio - Tangkas</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -40,7 +40,7 @@
                     </div>
                     <div class="project-info">
                         <h2>Website Thibbun Nabawi</h2>
-                        <p>Peran: Backend Developer, Tim kelompok</p>
+                        <p>Peran: Frontend Developer, Tim kelompok</p>
                         <span class="project-link">Lihat Detail <i class="fas fa-arrow-right"></i></span>
                     </div>
                 </a>
@@ -49,7 +49,7 @@
                         <img src="img/kuis.jpg" alt="Proyek 2">
                     </div>
                     <div class="project-info">
-                        <h2>Quiz App Java (PBO)</h2>
+                        <h2>Quiz App Java</h2>
                         <p>Peran: Backend & Logic, Tim kelompok</p>
                         <span class="project-link">Lihat Detail <i class="fas fa-arrow-right"></i></span>
                     </div>
@@ -59,7 +59,7 @@
                         <img src="img/greenfoot.png" alt="Proyek 3">
                     </div>
                     <div class="project-info">
-                        <h2>OOP Game Project</h2>
+                        <h2>Game Project</h2>
                         <p>Peran: Struktur dan logika OOP, Tim kelompok</p>
                         <span class="project-link">Lihat Detail <i class="fas fa-arrow-right"></i></span>
                     </div>
@@ -106,43 +106,53 @@
                 </a>
             </div>
         </section>
+
+        <div class="page-header">
+            <h1>Skills</h1>
+            <div class="underline"></div>
+        </div>
+        
+        <section class="skills-section">
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-python"></i>
+                    <h3>Python</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>
         <div class="footer-content">
             <div class="footer-info">
-                <p>© 2025 Tangkas. All rights reserved.</p>
+                <p>© 2025 Tangkas. Hak Cipta Dilindungi.</p>
             </div>
             <div class="social-icons">
                 <a href="https://instagram.com/tangkas.wn"><i class="fab fa-instagram"></i></a>
                 <a href="https://wa.me/085174070806"><i class="fab fa-whatsapp"></i></a>
                 <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tangkas187"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>
     
-    <script>
-        // Toggle Dark Mode
-        document.getElementById('toggle-dark').addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-            const icon = document.querySelector('#toggle-dark i');
-            const text = document.getElementById('toggle-dark');
-            
-            if (document.body.classList.contains('dark-mode')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-                text.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-                text.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
-            }
-        });
-
-        // Mobile Menu Toggle
-        document.querySelector('.menu-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+    <script src="script.js"></script>
+    
 </body>
 </html>
