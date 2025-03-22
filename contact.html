@@ -4,39 +4,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontak - Tangkas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <div class="logo">
+                Tangkas Portfolio
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
                 <li><a href="index.html">Beranda</a></li>
                 <li><a href="portfolio.html">Portofolio</a></li>
                 <li><a href="contact.html">Kontak</a></li>
+                <li><button id="toggle-dark"><i class="fas fa-moon"></i> Dark Mode</button></li>
             </ul>
-            <button id="toggle-dark">Dark Mode</button>
         </nav>
     </header>
+    
     <main>
-        <h1>Hubungi Saya</h1>
-        <form>
-            <input type="text" placeholder="Nama">
-            <input type="email" placeholder="Email">
-            <textarea placeholder="Pesan"></textarea>
-            <button type="submit">Kirim</button>
-        </form>
+        <div class="page-header">
+            <h1>Hubungi Saya</h1>
+            <div class="underline"></div>
+        </div>
+        
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Informasi Kontak</h2>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>tangkas.wn@email.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <p>085174070806</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Yogyakarta, Indonesia</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="https://instagram.com/tangkas.wn"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/085174070806"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" placeholder="Nama Lengkap">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" placeholder="Pesan Anda"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Kirim</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+    
     <footer>
-        <p>© 2025 Tangkas. All rights reserved.</p>
-        <div class="social-icons">
-            <a href="https://instagram.com/tangkas.wn"><img src="img/instagram.jpeg" alt="Instagram"></a>
-            <a href="https://wa.me/085174070806"><img src="img/whatsapp.jpeg" alt="WhatsApp"></a>
-            <a href="#"><img src="img/linkedin.jpeg" alt="LinkedIn"></a>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>© 2025 Tangkas. All rights reserved.</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://instagram.com/tangkas.wn"><i class="fab fa-instagram"></i></a>
+                <a href="https://wa.me/085174070806"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </footer>
+    
     <script>
+        // Toggle Dark Mode
         document.getElementById('toggle-dark').addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
+            const icon = document.querySelector('#toggle-dark i');
+            const text = document.getElementById('toggle-dark');
+            
+            if (document.body.classList.contains('dark-mode')) {
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                text.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+            } else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                text.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+            }
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
