@@ -83,7 +83,7 @@ project-root/
 - **script.js**: Interaktivitas.
 
 ## 6. Link Hosting
-[https://link-hosting-anda.com](https://link-hosting-anda.com)
+[https://byTangkas](https://tingkisss.github.io/potofoliotingkizz/)
 
 ---
 **Tangkas Wahyu Nugroho**  
