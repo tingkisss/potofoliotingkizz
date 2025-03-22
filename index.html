@@ -3,106 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Personal - Tangkas</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>[Nama Kamu] - Portofolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">
-                Tangkas Portfolio
-            </div>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="portfolio.html">Portofolio</a></li>
-                <li><a href="contact.html">Kontak</a></li>
-                <li><button id="toggle-dark"><i class="fas fa-moon"></i> Dark Mode</button></li>
+            <h1>[Nama Kamu]</h1>
+            <ul>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#contact">Kontak</a></li>
             </ul>
+            <button id="toggle-dark">🌙</button>
         </nav>
     </header>
-    
-    <main>
-        <div class="hero-section">
-            <div class="hero-content">
-                <h1>Halo, Saya <span class="highlight">Tangkas Wahyu Nugroho</span></h1>
-                <p class="subtitle">Saya seorang mahasiswa Informatika yang tertarik pada Web Development, Database, dan GameDev.</p>
-                <p>Selalu ingin belajar hal baru, dan aktif dalam kegiatan akademik maupun organisasi.</p>
-                <button class="download-cv">Download CV</button>
+    <section class="hero">
+        <h2>Halo, Saya [Nama Kamu]</h2>
+        <p>Seorang [profesi/kegiatan kamu] yang passionate dan kreatif.</p>
+    </section>
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>[Deskripsi tentang dirimu, minat, pengalaman, dan skill]</p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Proyek Terbaru</h2>
+        <div class="project-list">
+            <div class="project-card">
+                <h3>Proyek 1</h3>
+                <p>Deskripsi proyek 1.</p>
             </div>
-            <div class="hero-image">
-                <img src="img/fotoku.jpg" alt="Foto Profil">
+            <div class="project-card">
+                <h3>Proyek 2</h3>
+                <p>Deskripsi proyek 2.</p>
             </div>
-            <div class="wave-shape"></div>
         </div>
-
-        <section class="about-section">
-            <h2>Tentang Saya</h2>
-            <div class="about-content">
-                <div class="about-image">
-                    <img src="img/fotoku.jpg" alt="Foto Profil">
-                </div>
-                <div class="about-text">
-                    <h3>Tangkas Wahyu Nugroho</h3>
-                    <p class="about-subtitle">Mahasiswa Informatika</p>
-                    <p>Saya adalah mahasiswa yang bersemangat mempelajari berbagai hal baru dalam bidang teknologi. Fokus utama saya adalah Web Development, Database, dan GameDev. Selain itu, saya juga aktif dalam kegiatan akademik dan organisasi kampus.</p>
-                    <div class="skills">
-                        <div class="skill">
-                            <span>Web Development</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 85%"></div></div>
-                        </div>
-                        <div class="skill">
-                            <span>Database</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 75%"></div></div>
-                        </div>
-                        <div class="skill">
-                            <span>Game Development</span>
-                            <div class="skill-bar"><div class="skill-level" style="width: 60%"></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    </section>
+    <section id="contact" class="contact">
+        <h2>Hubungi Saya</h2>
+        <form>
+            <input type="text" placeholder="Nama">
+            <input type="email" placeholder="Email">
+            <textarea placeholder="Pesan"></textarea>
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
     <footer>
-        <div class="footer-content">
-            <div class="footer-info">
-                <p>© 2025 Tangkas. All rights reserved.</p>
-            </div>
-            <div class="social-icons">
-                <a href="https://instagram.com/tangkas.wn"><i class="fab fa-instagram"></i></a>
-                <a href="https://wa.me/085174070806"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-            </div>
-        </div>
+        <p>© 2025 [Nama Kamu]. All rights reserved.</p>
     </footer>
-
     <script>
-        // Toggle Dark Mode
-        document.getElementById('toggle-dark').addEventListener('click', () => {
+        const toggleBtn = document.getElementById('toggle-dark');
+        toggleBtn.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
-            const icon = document.querySelector('#toggle-dark i');
-            const text = document.getElementById('toggle-dark');
-            
-            if (document.body.classList.contains('dark-mode')) {
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
-                text.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-            } else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
-                text.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
-            }
-        });
-
-        // Mobile Menu Toggle
-        document.querySelector('.menu-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
